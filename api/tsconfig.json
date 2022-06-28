@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["node", "jest", "express"],
     "target": "ES2022",
     "module": "Node16",
     "lib": ["ES2022"],
