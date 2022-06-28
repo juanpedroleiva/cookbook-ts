@@ -1,12 +1,11 @@
-import express, { Express, Request, Response } from 'express';
-import dotenv from 'dotenv';
-import path from 'path';
+import express, { Express } from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
-
-export const app: Express = express();
+import 'dotenv/config';
 
 import { api } from './routes/api.js';
+
+export const app: Express = express();
 
 const PORT = process.env.PORT || 8000;
 
