@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "types": ["node", "jest", "express"],
-    "target": "ES2022",
+    "types": ["node", "express", "mocha", "chai"],
+    "target": "es2022",
     "module": "Node16",
     "lib": ["ES2022"],
     "moduleResolution": "Node16",
@@ -20,6 +20,6 @@
     "noImplicitThis": false,
     "strictNullChecks": false
   },
-  "include": ["src/**/*", "__tests__/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist", "dist/**/*spec.ts"],
+  "include": ["src/**/*", "test/**/*.ts"]
 }
