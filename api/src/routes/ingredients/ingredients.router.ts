@@ -1,5 +1,5 @@
 import express, { Router } from 'express';
-import { httpListAlIngredients, httpAddNewIngredient } from './ingredients.controller.js';
+import { httpListAlIngredients, httpAddNewIngredient } from './ingredients.controller';
 
 export const ingredientsRouter: Router = express.Router();
 

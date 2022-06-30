@@ -2,8 +2,8 @@ import {
     listAllIngredients,
     addNewIngredient,
     existsIngredient,
-} from '../../db/models/ingredients.models.js';
-import { ErrorMessage } from '../types.js';
+} from '../../db/models/ingredients.models';
+import { ErrorMessage } from '../types';
 import { Request, Response } from 'express';
 
 export async function httpListAlIngredients(req: Request, res: Response) {

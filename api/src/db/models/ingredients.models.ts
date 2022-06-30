@@ -1,4 +1,4 @@
-import { Ingredient, IIngredient } from './ingredients.mongo.js';
+import { Ingredient, IIngredient } from './ingredients.mongo';
 
 export async function listAllIngredients() {
     const ingredients = await Ingredient.find({});

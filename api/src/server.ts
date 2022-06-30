@@ -1,9 +1,9 @@
 import http from 'http';
 
-import { mongoConnect } from './services/mongo.js';
-import { seedIngredients } from './db/seeders/ingredients.seeder.js';
+import { mongoConnect } from './services/mongo';
+import { seedIngredients } from './db/seeders/ingredients.seeder';
 
-import { app } from './app.js';
+import { app } from './app';
 
 const PORT = process.env.PORT || 8000;
 

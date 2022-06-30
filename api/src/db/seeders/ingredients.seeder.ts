@@ -1,4 +1,4 @@
-import { addNewIngredient, existsIngredient } from '../models/ingredients.models.js';
+import { addNewIngredient, existsIngredient } from '../models/ingredients.models';
 
 const ingredients = [
     {
