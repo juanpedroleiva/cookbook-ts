@@ -3,7 +3,7 @@
     "types": ["node", "express", "mocha", "chai"],
     "target": "es2022",
     "module": "Node16",
-    "lib": ["ES2022"],
+    "lib": ["ES2021", "DOM"],
     "moduleResolution": "Node16",
     "rootDir": ".",
     "outDir": "build",
