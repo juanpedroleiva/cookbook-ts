@@ -7,6 +7,7 @@ import { api } from './routes/api';
 
 export const app: Express = express();
 
+const API_VER = process.env.API_VER || 'v1';
 const PORT = process.env.PORT || 8000;
 
 app.use(
@@ -14,8 +15,11 @@ app.use(
         origin: `http://localhost:${PORT}`,
     }),
 );
-app.use(morgan('short'));
+
+if (process.env.NODE_ENV !== 'test') {
+    app.use(morgan('short'));
+}
 
 app.use(express.json());
 
-app.use('/v1', api);
+app.use(`/${API_VER}`, api);
