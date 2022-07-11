@@ -27,5 +27,5 @@ export async function httpAddNewIngredient(req: Request, res: Response) {
     if (existingIngredient[0]) {
         return res.status(403).json(ErrorMessage.alreadyExists);
     }
-    return res.status(200).json(await addNewIngredient(ingredient));
+    return res.status(201).json(await addNewIngredient(ingredient));
 }
