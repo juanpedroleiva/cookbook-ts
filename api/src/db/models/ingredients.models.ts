@@ -20,3 +20,16 @@ export async function existsIngredient(ingredient: IIngredient) {
     }
     return {};
 }
+
+export async function existsIngredientById(ingredientId: string) {
+    const found = Ingredient.findById(ingredientId);
+    if (found) {
+        return found;
+    }
+    return {};
+}
+
+export async function deleteIngredientById(ingredientId: string) {
+    const deleted = Ingredient.deleteOne({ _id: ingredientId });
+    return deleted;
+}
